@@ -852,3 +852,7 @@ address { font-style: normal; }
   .menu-tabs { gap: 0; }
   .tab-btn { padding: 0.75rem 1rem; font-size: 0.8rem; }
 }
+.logo-wrap img {
+  background: transparent;
+  mix-blend-mode: multiply;
+}
