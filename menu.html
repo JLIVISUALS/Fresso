@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Fresso Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-placeholder">
+          <span class="logo-text">Fresso</span>
+          <span class="logo-sub">C A F É</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link active">Menu</a></li>
+        <li><a href="index.html#careers" class="nav-link">Careers</a></li>
+        <li><a href="#footer" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html#careers">Careers</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MENU HERO -->
+  <section class="page-hero">
+    <div class="page-hero-grain"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Good things to drink & eat</span>
+      <h1 class="page-hero-title">Our Menu</h1>
+      <p class="page-hero-sub">Made fresh. Made with love. Made for you.</p>
+    </div>
+  </section>
+
+  <!-- MENU TABS -->
+  <section class="menu-section">
+    <div class="menu-inner">
+      <div class="menu-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="coffee" role="tab">Coffee</button>
+        <button class="tab-btn" data-tab="nonCoffee" role="tab">Non-Coffee</button>
+        <button class="tab-btn" data-tab="food" role="tab">Food</button>
+        <button class="tab-btn" data-tab="specials" role="tab">Specials</button>
+      </div>
+
+      <!-- COFFEE -->
+      <div class="tab-content active" id="tab-coffee">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Espresso Bar</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">Espresso</span><span class="item-price">$3.50</span><p class="item-desc">Double shot, pulled to order. Bold & bright.</p></div>
+            <div class="menu-item"><span class="item-name">Americano</span><span class="item-price">$4.00</span><p class="item-desc">Espresso over hot water. Clean and smooth.</p></div>
+            <div class="menu-item"><span class="item-name">Cappuccino</span><span class="item-price">$5.00</span><p class="item-desc">Equal parts espresso, steamed milk & foam.</p></div>
+            <div class="menu-item"><span class="item-name">Flat White</span><span class="item-price">$5.25</span><p class="item-desc">Velvety micro-foam over a double ristretto.</p></div>
+            <div class="menu-item"><span class="item-name">Latte</span><span class="item-price">$5.50</span><p class="item-desc">Espresso with silky steamed milk. Classic & comforting.</p></div>
+            <div class="menu-item"><span class="item-name">Cortado</span><span class="item-price">$4.75</span><p class="item-desc">Espresso cut with an equal pour of warm milk.</p></div>
+            <div class="menu-item"><span class="item-name">Macchiato</span><span class="item-price">$4.50</span><p class="item-desc">Espresso "stained" with a dollop of foam.</p></div>
+            <div class="menu-item"><span class="item-name">Mocha</span><span class="item-price">$5.75</span><p class="item-desc">Espresso, dark chocolate, steamed milk.</p></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Cold Brew & Iced</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">Cold Brew</span><span class="item-price">$5.00</span><p class="item-desc">Steeped 18 hours for an ultra-smooth finish.</p></div>
+            <div class="menu-item"><span class="item-name">Iced Latte</span><span class="item-price">$5.50</span><p class="item-desc">Espresso over ice with your choice of milk.</p></div>
+            <div class="menu-item"><span class="item-name">Iced Americano</span><span class="item-price">$4.50</span><p class="item-desc">Chilled, crisp, and refreshingly bold.</p></div>
+            <div class="menu-item"><span class="item-name">Nitro Cold Brew</span><span class="item-price">$6.00</span><p class="item-desc">Nitrogen-infused cold brew on draft.</p></div>
+          </div>
+        </div>
+        <p class="menu-note">All drinks available with oat, almond, soy, or whole milk. Add a flavor shot for $0.75.</p>
+      </div>
+
+      <!-- NON-COFFEE -->
+      <div class="tab-content" id="tab-nonCoffee">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Tea & Botanicals</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">Matcha Latte</span><span class="item-price">$5.50</span><p class="item-desc">Ceremonial grade matcha, steamed with your choice of milk.</p></div>
+            <div class="menu-item"><span class="item-name">Chai Latte</span><span class="item-price">$5.25</span><p class="item-desc">House-spiced masala chai with steamed milk.</p></div>
+            <div class="menu-item"><span class="item-name">London Fog</span><span class="item-price">$5.50</span><p class="item-desc">Earl grey, vanilla, and lavender — steamed to perfection.</p></div>
+            <div class="menu-item"><span class="item-name">Loose Leaf Tea</span><span class="item-price">$4.00</span><p class="item-desc">Rotating single-origin teas. Ask your barista today's selection.</p></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Smoothies & Other</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">Golden Milk</span><span class="item-price">$5.50</span><p class="item-desc">Turmeric, ginger, honey, and oat milk. Comforting & healing.</p></div>
+            <div class="menu-item"><span class="item-name">Hot Chocolate</span><span class="item-price">$4.50</span><p class="item-desc">Rich single-origin dark chocolate — for the purist.</p></div>
+            <div class="menu-item"><span class="item-name">Sparkling Water</span><span class="item-price">$3.00</span><p class="item-desc">House-made lemon verbena infused sparkling water.</p></div>
+            <div class="menu-item"><span class="item-name">Fresh Juice</span><span class="item-price">$5.50</span><p class="item-desc">Seasonal pressed juice. Ask about today's blend.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOD -->
+      <div class="tab-content" id="tab-food">
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Pastries & Baked Goods</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">Butter Croissant</span><span class="item-price">$4.00</span><p class="item-desc">Flaky, golden, laminated to perfection. Baked fresh daily.</p></div>
+            <div class="menu-item"><span class="item-name">Almond Croissant</span><span class="item-price">$4.75</span><p class="item-desc">Classic croissant filled with almond frangipane.</p></div>
+            <div class="menu-item"><span class="item-name">Morning Muffin</span><span class="item-price">$3.75</span><p class="item-desc">Rotating seasonal flavors — always made from scratch.</p></div>
+            <div class="menu-item"><span class="item-name">Banana Bread</span><span class="item-price">$4.00</span><p class="item-desc">Brown butter & walnut. The one you come back for.</p></div>
+            <div class="menu-item"><span class="item-name">Scone</span><span class="item-price">$3.75</span><p class="item-desc">Served warm with clotted cream & seasonal jam.</p></div>
+            <div class="menu-item"><span class="item-name">Cinnamon Roll</span><span class="item-price">$5.00</span><p class="item-desc">Soft, gooey, and glazed. Worth every bite.</p></div>
+          </div>
+        </div>
+        <div class="menu-category">
+          <h3 class="menu-cat-title">Savory Bites</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span class="item-name">Avocado Toast</span><span class="item-price">$9.00</span><p class="item-desc">Sourdough, smashed avo, chili flake, lemon, everything bagel seasoning.</p></div>
+            <div class="menu-item"><span class="item-name">Egg & Cheese Sandwich</span><span class="item-price">$8.50</span><p class="item-desc">Soft scrambled egg, aged cheddar on toasted brioche.</p></div>
+            <div class="menu-item"><span class="item-name">Yogurt Parfait</span><span class="item-price">$7.00</span><p class="item-desc">House granola, seasonal fruit, and local honey.</p></div>
+            <div class="menu-item"><span class="item-name">Quiche Slice</span><span class="item-price">$7.50</span><p class="item-desc">Rotating recipe. Ask your barista for today's variety.</p></div>
+          </div>
+        </div>
+        <p class="menu-note">Gluten-free options available. Please ask your barista about allergen information.</p>
+      </div>
+
+      <!-- SPECIALS -->
+      <div class="tab-content" id="tab-specials">
+        <div class="menu-category specials-category">
+          <h3 class="menu-cat-title">✦ Seasonal Specials ✦</h3>
+          <p class="specials-intro">Our specials rotate with the seasons, inspired by local flavors and what we're loving right now. Here's what's on now:</p>
+          <div class="menu-grid specials-grid">
+            <div class="menu-item special-item">
+              <span class="special-tag">New</span>
+              <span class="item-name">Honey Lavender Latte</span><span class="item-price">$6.50</span>
+              <p class="item-desc">House espresso, local wildflower honey, lavender syrup, oat milk. Floral & warm.</p>
+            </div>
+            <div class="menu-item special-item">
+              <span class="special-tag">Fan Fav</span>
+              <span class="item-name">Cardamom Brown Sugar Latte</span><span class="item-price">$6.50</span>
+              <p class="item-desc">Espresso, brown sugar, cardamom, and a touch of vanilla cream.</p>
+            </div>
+            <div class="menu-item special-item">
+              <span class="special-tag">Limited</span>
+              <span class="item-name">Spiced Pear Cider</span><span class="item-price">$5.75</span>
+              <p class="item-desc">Warm pressed pear juice with cinnamon, star anise, and clove. Non-coffee.</p>
+            </div>
+            <div class="menu-item special-item">
+              <span class="special-tag">New</span>
+              <span class="item-name">Pistachio Rose Croissant</span><span class="item-price">$5.50</span>
+              <p class="item-desc">Laminated pastry filled with pistachio cream and a hint of rose water.</p>
+            </div>
+          </div>
+          <p class="specials-note">Specials change regularly — follow us on Instagram <strong>@frescocafe</strong> to be the first to know.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-text">Fresso</span>
+          <span class="logo-sub">C A F É</span>
+        </div>
+        <p class="footer-tagline">Handcrafted with warmth,<br/>served with heart.</p>
+        <div class="socials">
+          <a href="YOUR_INSTAGRAM_LINK" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="YOUR_FACEBOOK_LINK" target="_blank" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="YOUR_TIKTOK_LINK" target="_blank" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+          </a>
+          <a href="YOUR_YELP_LINK" target="_blank" class="social-btn" aria-label="Yelp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Find Us</h4>
+        <address>
+          <p>📍 123 Main Street<br/>Your City, TX 00000</p>
+          <p>📞 <a href="tel:+10000000000">(000) 000-0000</a></p>
+          <p>✉️ <a href="mailto:hello@frescocafe.com">hello@frescocafe.com</a></p>
+        </address>
+        <div class="hours">
+          <h4>Hours</h4>
+          <p>Mon – Fri: 7am – 7pm</p>
+          <p>Sat – Sun: 8am – 6pm</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Fresso Café. All rights reserved.</p>
+      <p class="footer-credit">Designed with warmth ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresso Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-placeholder">
+          <span class="logo-text">Fresso</span>
+          <span class="logo-sub">C A F É</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="#careers" class="nav-link" id="careers-nav-link">Careers</a></li>
+        <li><a href="#footer" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. Since the First Sip</p>
+      <h1 class="hero-title">Where Every Cup<br/><em>Tells a Story</em></h1>
+      <p class="hero-subtitle">Handcrafted coffee, warm spaces,<br/>and a community worth savoring.</p>
+      <div class="hero-cta-group">
+        <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+        <a href="#about" class="btn btn-ghost">Our Story ↓</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHO WE ARE -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">More Than Just<br/><em>a Coffee Shop</em></h2>
+        <p class="body-text">Fresso Café was born from a simple belief — that a great cup of coffee should feel like a warm conversation. We source our beans from small, independent farms and roast in small batches to bring out every note, every nuance.</p>
+        <p class="body-text">Our space is intentionally unhurried. Whether you're catching up with a friend, working through your morning, or simply sitting still — you belong here.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Small-Batch Roasted</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Farm</span>
+            <span class="stat-label">Direct Sourcing</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">All Day</span>
+            <span class="stat-label">Fresh Baked Goods</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-img-placeholder">
+          <div class="about-img-inner">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="85" r="50" fill="var(--cream-dark)" opacity="0.6"/>
+              <path d="M65 135 Q100 160 135 135" stroke="var(--brown-mid)" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M85 85 Q100 70 115 85" stroke="var(--brown-dark)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <circle cx="100" cy="90" r="18" fill="var(--brown-dark)" opacity="0.15"/>
+              <text x="100" y="185" text-anchor="middle" font-family="Lora" font-size="11" fill="var(--brown-mid)" opacity="0.7">[ Your Photo Here ]</text>
+            </svg>
+          </div>
+        </div>
+        <div class="about-badge">
+          <span>Crafted</span>
+          <span>with</span>
+          <span>Love</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED SECTION -->
+  <section class="featured">
+    <div class="featured-inner">
+      <span class="section-label centered">From Our Menu</span>
+      <h2 class="section-title centered">A Taste of What<br/><em>Awaits You</em></h2>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="card-icon">☕</div>
+          <h3>Signature Espresso</h3>
+          <p>Our house blend, pulled to perfection — bold, bright, and balanced.</p>
+          <a href="menu.html" class="card-link">See Coffee Menu →</a>
+        </div>
+        <div class="featured-card highlight">
+          <div class="card-icon">🥐</div>
+          <h3>Fresh-Baked Daily</h3>
+          <p>From buttery croissants to seasonal pastries, baked fresh every morning.</p>
+          <a href="menu.html" class="card-link">See Food Menu →</a>
+        </div>
+        <div class="featured-card">
+          <div class="card-icon">🍵</div>
+          <h3>Seasonal Specials</h3>
+          <p>Rotating drinks inspired by the season — always something new to discover.</p>
+          <a href="menu.html" class="card-link">See Specials →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERE STRIP -->
+  <section class="atmosphere">
+    <div class="atm-grain"></div>
+    <div class="atm-content">
+      <blockquote>
+        <p>"Come as you are.<br/>Leave feeling like yourself again."</p>
+        <cite>— The Fresso Family</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CAREERS -->
+  <section class="careers" id="careers">
+    <div class="careers-inner">
+      <div class="careers-text">
+        <span class="section-label">Join the Team</span>
+        <h2 class="section-title">Work Where You<br/><em>Love to Be</em></h2>
+        <p class="body-text">We're always looking for passionate, people-first humans to join the Fresso family. If you love coffee, community, and creating moments — we'd love to hear from you.</p>
+        <a href="YOUR_HIRING_LINK_HERE" target="_blank" class="btn btn-primary" id="hiring-btn">View Open Positions</a>
+        <p class="careers-note">* Replace the link above in the HTML with your hiring platform URL (Indeed, LinkedIn, etc.)</p>
+      </div>
+      <div class="careers-visual">
+        <div class="careers-perks">
+          <div class="perk"><span class="perk-icon">☕</span><span>Free drinks on shift</span></div>
+          <div class="perk"><span class="perk-icon">🤝</span><span>Supportive team culture</span></div>
+          <div class="perk"><span class="perk-icon">📈</span><span>Growth opportunities</span></div>
+          <div class="perk"><span class="perk-icon">🎓</span><span>Coffee education & training</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-text">Fresso</span>
+          <span class="logo-sub">C A F É</span>
+        </div>
+        <p class="footer-tagline">Handcrafted with warmth,<br/>served with heart.</p>
+        <div class="socials">
+          <a href="YOUR_INSTAGRAM_LINK" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="YOUR_FACEBOOK_LINK" target="_blank" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="YOUR_TIKTOK_LINK" target="_blank" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+          </a>
+          <a href="YOUR_YELP_LINK" target="_blank" class="social-btn" aria-label="Yelp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Find Us</h4>
+        <address>
+          <p>📍 123 Main Street<br/>Your City, TX 00000</p>
+          <p>📞 <a href="tel:+10000000000">(000) 000-0000</a></p>
+          <p>✉️ <a href="mailto:hello@frescocafe.com">hello@frescocafe.com</a></p>
+        </address>
+        <div class="hours">
+          <h4>Hours</h4>
+          <p>Mon – Fri: 7am – 7pm</p>
+          <p>Sat – Sun: 8am – 6pm</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Fresso Café. All rights reserved.</p>
+      <p class="footer-credit">Designed with warmth ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
